@@ -1,9 +1,9 @@
-<!----created by Zhaosheng Wang>
+<!----created by Zhaosheng Wang--->
 <?php
 
 require_once('../mysqli_connect.php');
 
-$query = "SELECT nickname,username, hobbies FROM users";
+$query = "SELECT nickname,username, hobbies, ageRange FROM users";
  
 $response = mysqli_query($dbc, $query);
  
@@ -21,6 +21,7 @@ if($response){
 			<th align="left"><b>Nickname</b></td>
 			<th align="left"><b>Username</b></td>
 			<th align="left"><b>Hobbies</b></td>
+			<th align="left"><b>ageRange</b></td>
 		</tr>';
 
 while($row = mysqli_fetch_array($response)){
@@ -30,7 +31,9 @@ while($row = mysqli_fetch_array($response)){
 			<td align="left">' . 
 			$row['username'] . '</td>
 			<td align="left">' . 
-			$row['hobbies'] . '</td>';
+			$row['hobbies'] . '</td>
+			<td align="left">' . 
+			$row['ageRange'] . '</td>';
 	echo '</tr>';
 }
 echo '</table>';                                                                                          

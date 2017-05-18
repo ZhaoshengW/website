@@ -15,8 +15,8 @@
 			$_SESSION['message'] = "You have succesfully logged in.";
 			header("location: userHome.php");
 		}else{
-			echo '<p style = "color:red;">Invalid username or password!</p>';
-			echo '<script>alert("Invalid username or password!");</script>';		
+			echo '<p style = "color:red;margin: 8px 400px 8px 400px;">*Invalid username or password!</p>';
+			//echo '<script>alert("Invalid username or password!");</script>';		
 		}		
 	}	
 ?>
@@ -84,10 +84,10 @@
 
 			
 			<label for = "usernameID"> Username</label>
-			<input type = "text" name = "username" placeholder = "" id = "usernameID">
+			<input type = "text" name = "username" placeholder = "" id = "usernameID" required>
 			
 			<label for = "passwordID"> Password</label>
-			<input type = "password" name = "pw" placeholder = "" id = "passwordID">
+			<input type = "password" name = "pw" placeholder = "" id = "passwordID" required>
 					
 			<label for = "showPassword"> Show password</label>
 			<input type="checkbox" id = "showPassword"> 
