@@ -62,9 +62,9 @@
 				<form action="http://localhost:1234/login.php" method="post">
 					<div class="modal-body">
 						Username:
-						<input type="text" class="form-control" name="username" placeholder="username" >
+						<input type="text" class="form-control" name="username" placeholder="username" required>
 						Password:
-						<input type="password" class="form-control" name="pw" placeholder="password" id = "passwordID">
+						<input type="password" class="form-control" name="pw" placeholder="password" id = "passwordID" required>
 						<input type="checkbox" id = "showPassword">Show password
 					</div>
 					<div class="modal-footer">
@@ -86,17 +86,27 @@
 				<form action="http://localhost:1234/register.php" method="post">
 					<div class="modal-body">
 						Nickname:
-						<input type="text" class="form-control" name="nickname" placeholder="nickname" >
+						<input type="text" class="form-control" name="nickname" placeholder="nickname" required>
 						Username:
-						<input type="text" class="form-control" name="username" placeholder="username" >
+						<input type="text" class="form-control" name="username" placeholder="username" required>
 						Password:
-						<input type="password" class="form-control" name="pw" placeholder="password" id = "registerPasswordID" >
+						<input type="password" class="form-control" name="pw" placeholder="password" id = "registerPasswordID"  required>
 						Confirmed your password:
-						<input type="password"  class="form-control" name="confirmedPassword" placeholder="password" id = "registerConfirmedPasswordID">
+						<input type="password"  class="form-control" name="confirmedPassword" placeholder="password" id = "registerConfirmedPasswordID" required>
 						<input type="checkbox" id = "registerShowPassword"> Show password
 						<br></br>
 						Hobbies:
-						<input type="text" class="form-control" name="hobbies" placeholder="hobbies">						
+						<input type="text" class="form-control" name="hobbies" placeholder="hobbies">
+						<br></br>
+						Age Range:
+						<select id="ageID" name="ageRange">     
+							<option value="child">under 13</option>
+							<option value="teenager">13-17</option>
+							<option value="youngAdult" >18-25</option>
+							<option value="adult">26-65</option>
+							<option value="elder">Above 65</option>
+							<option value="can'tTell" selected>Can't tell</option>
+						</select>
 					</div>
 					<div class="modal-footer">
 					  <button type="submit" class="btn btn-default" name="register_btn" value="login">Create the account </button>
