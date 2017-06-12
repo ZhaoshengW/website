@@ -1,4 +1,4 @@
-"users":[
+{"users":[
 	{
 		"name":"Jenny",
 		"quote": "I like to eat!"
@@ -12,3 +12,4 @@
 		"quote": "I like to talk!"
 	},	
 ]
+}
