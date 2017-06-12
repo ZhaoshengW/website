@@ -1,17 +1,14 @@
 [
 	{
 		"name":"Jenny",
-		"hobbies": ["eating","sleeping"],
 		"quote": "I like to eat!"
 	},
 	{
 		"name":"Kenny",
-		"hobbies": ["playing","reading"],
 		"quote": "I like to play!"
 	},	
 	{
 		"name":"Menny",
-		"hobbies": ["exercising","talkinh"],
 		"quote": "I like to talk!"
 	},	
 ]
