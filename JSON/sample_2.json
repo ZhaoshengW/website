@@ -1,14 +1,26 @@
 [
-	{
-		"name":"Jenny",
-		"quote": "I like to eat!"
-	},
-	{
-		"name":"Kenny",
-		"quote": "I like to play!"
-	},	
-	{
-		"name":"Menny",
-		"quote": "I like to talk!"
-	}
+  {
+    "name": "Meowsy",
+    "species" : "cat",
+    "foods": {
+      "likes": ["tuna", "catnip"],
+      "dislikes": ["ham", "zucchini"]
+    }
+  },
+  {
+    "name": "Barky",
+    "species" : "dog",
+    "foods": {
+      "likes": ["bones", "carrots"],
+      "dislikes": ["tuna"]
+    }
+  },
+  {
+    "name": "Purrpaws",
+    "species" : "cat",
+    "foods": {
+      "likes": ["mice"],
+      "dislikes": ["cookies"]
+    }
+  }
 ]
